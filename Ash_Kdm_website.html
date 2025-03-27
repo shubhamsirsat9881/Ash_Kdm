@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashish K. Kadam | CS&amp;E Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: rgba(255,255,255,0.95);
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 25px;
+    }
+
+    nav ul li a {
+      color: #5D93E1;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #3F72AF;
+    }
+
+    /* Hero Section */
+    #hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 100px;
+      background: linear-gradient(135deg, #F0F4F8 0%, #DFE7EF 100%);
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #3F72AF;
+    }
+
+    .hero-content p {
+      font-size: 1.4rem;
+      color: #6B7C93;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #FFFFFF;
+      padding: 100px 0;
+    }
+
+    .about-content {
+      font-size: 1.1rem;
+      color: #4a4a4a;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    /* Skills Section */
+    #skills {
+      background-color: #FFFFFF;
+      padding: 100px 0;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .skill-card {
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(93,147,225,0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #5D93E1;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #FFFFFF;
+      padding: 100px 0;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(93,147,225,0.1);
+      border-left: 4px solid #5D93E1;
+    }
+
+    .project-card h3 {
+      color: #3F72AF;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #F0F4F8;
+      padding: 100px 0;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 25px;
+      background-color: #FFFFFF;
+      border: 2px solid #DFE7EF;
+      color: #4a4a4a;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #5D93E1;
+      outline: none;
+    }
+
+    button {
+      background-color: #5D93E1;
+      color: white;
+      padding: 12px 35px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3F72AF;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="container hero-content">
+      <h1>Aashish Kishor Kadam</h1>
+      <p>Computer Science &amp; Engineering Student | Sanjivani University, Kopargaon</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-content">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated Computer Science and Engineering student with a 3.8 GPA at Sanjivani University, Kopargaon. Specializing in full-stack web development and artificial intelligence solutions, I combine technical expertise with innovative problem-solving skills to deliver efficient digital solutions.
+      </p>
+      <p>
+        With 2+ years of hands-on experience in software development, I have successfully implemented multiple projects spanning web applications, mobile development, and machine learning models. My expertise includes developing responsive web applications using modern JavaScript frameworks, designing and implementing RESTful APIs, building machine learning models with Python and TensorFlow, and mobile application development for the Android platform.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-robot"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-brain"></i>
+          <h3>AI Development</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-android"></i>
+          <h3>Android Development</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>RESTful APIs</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Bike Starter with Fingerprint Verification</h3>
+          <p>A secure and innovative project that uses fingerprint recognition technology to start a bike. This system integrates hardware and software to provide a seamless authentication experience.</p>
+        </div>
+        <div class="project-card">
+          <h3>Full-Stack Web Application</h3>
+          <p>A responsive web application built using modern JavaScript frameworks, featuring robust RESTful API integration.</p>
+        </div>
+        <!-- Additional project cards can be added here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
